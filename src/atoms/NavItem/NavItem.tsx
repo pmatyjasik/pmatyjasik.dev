@@ -6,7 +6,7 @@ interface Props {
 }
 
 const NavItem = ({text, url}: Props) => (
-  <li className="text-secondary hover:cursor-pointer hover:text-primary hover:transition-colors">
+  <li className="border-b border-transparent text-white hover:scale-110 hover:cursor-pointer hover:border-b hover:border-white">
     <span>
       {text}
       {url}
