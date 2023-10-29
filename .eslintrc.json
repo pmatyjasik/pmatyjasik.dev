@@ -8,6 +8,8 @@
     "react/function-component-definition": "off",
     "react/require-default-props": "off",
     "arrow-body-style": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "@next/next/no-title-in-document-head": "off",
+    "@typescript-eslint/no-shadow": "off"
   }
 }
