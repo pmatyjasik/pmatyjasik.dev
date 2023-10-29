@@ -16,10 +16,9 @@ export default function Document() {
           property="og:description"
           content="Hi, my name is Piotr Matyjasik. Welcome to my portfolio."
         />
-        <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+        <meta property="og:image" content="og-image.png" />
         <meta name="theme-color" content="#355FE5" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

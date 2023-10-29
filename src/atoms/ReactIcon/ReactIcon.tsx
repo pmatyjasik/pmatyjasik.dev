@@ -12,7 +12,7 @@ const Icon = ({Icon, className}: Props) => {
     <div>
       {React.cloneElement(Icon, {
         className: twMerge(
-          'w-20 h-20 text-white mb-2 md:mb-0 hover:scale-125 hover:transition-all',
+          'w-20 h-20 text-white mb-2 md:mb-0 hover:scale-125 transition-all',
           className
         ),
       })}

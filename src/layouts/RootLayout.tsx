@@ -21,6 +21,11 @@ const RootLayout = ({children}: RootLayoutProps) => {
         </div>
       </nav>
       {children}
+      <footer className="w-full bg-primary py-2">
+        <p className="text-center font-light text-white">
+          &copy; {new Date().getFullYear()} - Piotr Matyjasik
+        </p>
+      </footer>
     </main>
   );
 };
