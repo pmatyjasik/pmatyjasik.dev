@@ -6,6 +6,8 @@
   "rules": {
     "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": "off",
-    "arrow-body-style": "off"
+    "react/require-default-props": "off",
+    "arrow-body-style": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
