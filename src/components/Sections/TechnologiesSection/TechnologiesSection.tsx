@@ -1,5 +1,6 @@
-import Icon from 'atoms/ReactIcon/ReactIcon';
+import Icon from 'atoms/Icon/Icon';
 import SectionHeading from 'components/SectionHeading/SectionHeading';
+import SectionWrapper from 'components/SectionWrapper/SectionWrapper';
 import {
   SiTypescript,
   SiTailwindcss,
@@ -10,7 +11,7 @@ import {
 } from 'react-icons/si';
 
 const TechnologiesSection = () => (
-  <section id="technologies" className="full-width mt-5 bg-secondary px-2 py-10">
+  <SectionWrapper className="bg-secondary">
     <SectionHeading subheading="SKILLS" heading="TECHNOLOGIES" />
     <div className="mt-5 grid grid-cols-2 items-center justify-center justify-items-center gap-y-4 md:grid-cols-6">
       <Icon Icon={<SiJavascript />} />
@@ -20,7 +21,7 @@ const TechnologiesSection = () => (
       <Icon Icon={<SiTailwindcss />} />
       <Icon Icon={<SiGit />} />
     </div>
-  </section>
+  </SectionWrapper>
 );
 
 export default TechnologiesSection;

@@ -4,14 +4,14 @@ import ExperienceSection from 'components/Sections/ExperienceSection/ExperienceS
 import ProjectsSection from 'components/Sections/ProjectsSection/ProjectsSection';
 import ContactSection from 'components/Sections/ContactSection/ContactSection';
 
-export default function Home() {
-  return (
-    <>
-      <AboutSection />
-      <TechnologiesSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <ContactSection />
-    </>
-  );
-}
+const Home = () => (
+  <>
+    <AboutSection />
+    <TechnologiesSection />
+    <ExperienceSection />
+    <ProjectsSection />
+    <ContactSection />
+  </>
+);
+
+export default Home;

@@ -1,13 +1,18 @@
-import MobileMenu from 'components/MobileMenu/MobileMenu';
-import NavItems from 'components/NavItems/NavItems';
+import Icon from 'atoms/Icon/Icon';
+import Head from 'next/head';
+import Link from 'next/link';
 import React, {ReactNode} from 'react';
+import {SiGithub, SiLinkedin, SiMaildotru, SiReaddotcv} from 'react-icons/si';
 
 interface RootLayoutProps {
   children: ReactNode;
 }
 
-const RootLayout = ({children}: RootLayoutProps) => {
-  return (
+const RootLayout = ({children}: RootLayoutProps) => (
+  <>
+    <Head>
+      <title>Piotr Matyjasik</title>
+    </Head>
     <main>
       <nav className="sticky top-0 z-10 border-b border-white bg-primary">
         <div className="px-2 md:px-6 lg:px-8">
@@ -15,8 +20,24 @@ const RootLayout = ({children}: RootLayoutProps) => {
             <span className="text-2xl font-semibold text-white hover:cursor-pointer">
               Piotr Matyjasik
             </span>
-            <NavItems className="hidden gap-4 space-x-4 md:flex" />
-            <MobileMenu />
+            <div className="flex items-center justify-between gap-3 md:gap-7">
+              <Link href="https://github.com/pmatyjasik" rel="noopener noreferrer" target="_blank">
+                <Icon Icon={<SiGithub />} navMenu />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/piotr-matyjasik/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Icon Icon={<SiLinkedin />} navMenu />
+              </Link>
+              <Link href="mailto:pmatyjasik@icloud.com" rel="noopener noreferrer" target="_blank">
+                <Icon Icon={<SiMaildotru />} navMenu />
+              </Link>
+              <Link href="/cv/PiotrMatyjasikCV.pdf" download>
+                <Icon Icon={<SiReaddotcv />} navMenu />
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
@@ -27,7 +48,7 @@ const RootLayout = ({children}: RootLayoutProps) => {
         </p>
       </footer>
     </main>
-  );
-};
+  </>
+);
 
 export default RootLayout;
