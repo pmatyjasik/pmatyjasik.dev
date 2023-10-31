@@ -10,12 +10,12 @@ const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
-export default function App({Component, pageProps}: AppProps) {
-  return (
-    <main className={`${poppins.variable}`}>
-      <RootLayout>
-        <Component {...pageProps} />
-      </RootLayout>
-    </main>
-  );
-}
+const App = ({Component, pageProps}: AppProps) => (
+  <main className={`${poppins.variable}`}>
+    <RootLayout>
+      <Component {...pageProps} />
+    </RootLayout>
+  </main>
+);
+
+export default App;
