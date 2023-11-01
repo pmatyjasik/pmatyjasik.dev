@@ -2,12 +2,19 @@ import Button from 'atoms/Button/Button';
 import ProjectItem from 'components/ProjectItem/ProjectItem';
 import SectionHeading from 'components/SectionHeading/SectionHeading';
 import SectionWrapper from 'components/SectionWrapper/SectionWrapper';
+import {motion} from 'framer-motion';
 import Link from 'next/link';
 
 const ProjectsSection = () => (
   <SectionWrapper className="mt-8 md:mt-20">
     <SectionHeading subheading="PORTFOLIO" heading="LAST PROJECTS" inverted />
-    <div className="mt-3">
+    <motion.div
+      className="mt-3"
+      initial={{opacity: 0.01}}
+      whileInView={{opacity: 1}}
+      viewport={{once: true, amount: 0.1}}
+      transition={{duration: 1}}
+    >
       <ProjectItem
         src="/projects/formslab.png"
         projectTitle="FormsLab"
@@ -29,12 +36,18 @@ const ProjectsSection = () => (
         projectLink="https://quization.vercel.app/"
         githubLink="https://github.com/pmatyjasik/quization"
       />
-    </div>
-    <div className="mt-8 flex justify-center">
+    </motion.div>
+    <motion.div
+      className="mt-8 flex justify-center"
+      initial={{opacity: 0.3}}
+      whileInView={{opacity: 1}}
+      viewport={{once: true, amount: 0.7}}
+      transition={{duration: 0.5}}
+    >
       <Link href="https://github.com/pmatyjasik" rel="noopener noreferrer" target="_blank">
         <Button>Check out my GitHub</Button>
       </Link>
-    </div>
+    </motion.div>
   </SectionWrapper>
 );
 
