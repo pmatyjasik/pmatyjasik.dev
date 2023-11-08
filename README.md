@@ -7,11 +7,11 @@ Welcome to my personal portfolio! This website is built with Next.js, TypeScript
 
 ## What's in the website
 
-- [About me]
-- [Technologies]
-- [Experience]
-- [Projects]
-- [Contact]
-- [CV]
+- About me
+- Technologies
+- Experience
+- Projects
+- Contact
+- CV
 
 
