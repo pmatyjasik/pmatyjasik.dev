@@ -30,7 +30,7 @@ const AboutSection = () => (
             initial={{y: 100}}
             whileInView={{y: 0}}
             viewport={{once: true}}
-            transition={{duration: 1.5}}
+            transition={{duration: 0.8}}
           >
             Front-end Developer
           </motion.span>
@@ -54,7 +54,7 @@ const AboutSection = () => (
           initial={{y: 100}}
           whileInView={{y: 0}}
           viewport={{once: true}}
-          transition={{duration: 2}}
+          transition={{duration: 0.8}}
         >
           <Lottie animationData={animation} loop />
         </motion.div>
