@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# My Portfolio
 
 Welcome to my personal portfolio! This website is built with Next.js, TypeScript, and Tailwind CSS. You can visit the live site at [https://pmatyjasik.dev](https://pmatyjasik.dev).
 
